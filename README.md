@@ -35,7 +35,7 @@ Welcome to the Social Network Web Application! This project is a full-stack web 
 1. Clone the repository:
 
    ```shell
-   git clone
+   git clone https://github.com/Jocy99/My-Social-Network.git
 
 2. Install dependencies:
 
@@ -47,9 +47,11 @@ Welcome to the Social Network Web Application! This project is a full-stack web 
 Create a .env file in the root directory and configure the following variables:
 
 env:
-PORT=3000
-MONGODB_URI=mongodb://localhost/social-network-db
-JWT_SECRET=yoursecretkey
+
+  PORT=3000
+  MONGODB_URI=mongodb://localhost/social-network-db
+  JWT_SECRET=yoursecretkey
+  
 Modify these values according to your preferences.
 
 4. Start the application:
