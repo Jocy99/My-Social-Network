@@ -1,0 +1,15 @@
+{
+  "name": "my-social-network",
+  "version": "1.0.0",
+  "description": "Welcome to the Social Network Web Application! This project is a full-stack web application that allows users to share their thoughts, react to friends' thoughts, and create a friend list. It's built using Express.js for routing, MongoDB for the database, and the Mongoose ODM.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.6.2"
+  }
+}
