@@ -62,5 +62,3 @@ const userControllers = {
         }
     }
 }
-
-// create the same functions for created and deleting thoughts
