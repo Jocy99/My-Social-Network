@@ -1,8 +1,8 @@
-const User = require("../models/user");
-const Thought = require("../models/thoughts");
+const User = require("../models/Users");
+const Thought = require("../models/Thought");
 
 const userControllers = {
-    // tap into db to find users responds to the front end
+    // tap into db to find users and responds to the front end
    async getUsers(req, res) {
         try {
             const users = await User.find()
@@ -58,7 +58,9 @@ const userControllers = {
             )
             res.json(deleteUser)
         } catch (error) {
-            console.error(error)
+            console.error(error.stack)
         }
     }
-}
+};
+
+module.exports = userControllers;
