@@ -1,7 +1,4 @@
-// define mongoose to a variable
-// const mongoose = require("mongoose");
-const { Schema, Types } = require("mongoose");
-
+const { Schema, model } = require("mongoose");
 
 //  create a new instance of mongoose schema to define the structure of User documents
 const userSchema = new Schema({
@@ -26,11 +23,11 @@ const userSchema = new Schema({
   friends: [
     {
       type: Schema.Types.ObjectId,
-      ref: "User", // self refrence to the user model
+      ref: "Users", // self refrence to the user model
     },
   ],
 });
 
-const User = mongoose.model('User', userSchema);
+const Users = model('Users', userSchema);
 
-module.exports = User;
+module.exports = Users;
