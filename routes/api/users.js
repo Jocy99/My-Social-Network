@@ -8,19 +8,10 @@ const {
 } = require('../../controllers/userControllers');
 
 // GET all users
-router.route('/').get(getUsers);
+router.route('/').get(getUsers).post(createUser);
 
-// GET single user by its id 
-router.route('/:userId').get(getSingleUser);
-
-// POST a new user
-router.route('./:userId').post(createUser);
-
-// PUT to update a user by its id
-router.route('/:userId').put(updateUser);
-
-// DELETE user by its ID
-router.route('/:userId').get(getSingleUser).delete(deleteUser);
+// GET single user, POST PUT and DELETE by its id 
+router.route('/:userId').get(getSingleUser).put(updateUser).delete(deleteUser);
 
 // BONUS remove a users associated thoughts when deleted
 // POST and DELETE a friend to a user's friend list

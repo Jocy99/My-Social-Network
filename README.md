@@ -1,6 +1,6 @@
-# Social Network Web Application
+# Social Network API with Mongoose and MongoDB
 
-Welcome to the Social Network Web Application! This project is a full-stack web application that allows users to share their thoughts. It's built using Express.js for routing, MongoDB for the database, and the Mongoose ODM.
+Welcome to the Social Network Application! This application provides an API for managing users, thoughts, reactions, and friends in a social network context. It's built using Express.js for routing, MongoDB for the database, and the Mongoose ODM.Below, you'll find information on how to set up and run this application. 
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@ Welcome to the Social Network Web Application! This project is a full-stack web 
 
 ## Features
 
-- User registration and authentication
+- Future Feature: User registration and authentication
 - Posting thoughts and reactions
 - Managing a friend list
 - Error handling and validation
@@ -56,7 +56,7 @@ Modify these values according to your preferences.
    ```shell
     npm start
 
-Your app should now be running at http://localhost:3000.
+Your app should now be running at http://localhost:3001.
 
 ## Usage
 
@@ -90,7 +90,7 @@ My application is a social media app that allows users to create, read, update, 
 2. **Confirmation**: Confirm the deletion, as this action is usually irreversible.
 
 
-My Social Network application simplifies the process of creating, viewing, updating, and deleting posts, making it easy for you to manage your thoughts and engage with others in the social media community. Enjoy using the app to express yourself and connect with friends and followers!
+My Social Network application simplifies the process of creating, viewing, updating, and deleting posts, making it easy for you to manage your thoughts and engage with others in the social media community. Enjoy using the app to express yourself and connect with friends!
 
 ## Deployment
 This guide will walk you through the steps to deploy the Social Network using Node.js and Express.js. Before starting, ensure you have the following prerequisites in place:
@@ -111,6 +111,9 @@ Make sure to set the necessary environment variables, like the port on which you
 
 4. Start your Node.js Application
 Start your Node.js application using npm start.
+
+5. CRUD Using Insomnia or Postman
+Once you are connected to the server you can start to create, read, update and delete data from users and thoughts.
 
 ## Contributing
 If you'd like to contribute to this project, definitely reach out!
