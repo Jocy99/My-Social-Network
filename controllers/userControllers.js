@@ -14,7 +14,7 @@ const userControllers = {
 // requests single user information based off of user ID
     async getSingleUser(req, res) {
         try {
-            const singleUser = await User.findOne({_id: req.params.id})
+            const singleUser = await User.findOne({_id: req.params.userId})
             res.json(singleUser)
         } catch (error) {
             console.error(error)
@@ -34,7 +34,7 @@ const userControllers = {
         try {
             const updatedUser = await User.findOneAndUpdate(
                 {
-                    _id: req.params.id
+                    _id: req.params.userId
                 },
                 {
                    $set: req.body, 
@@ -53,7 +53,7 @@ const userControllers = {
         try {
             const deleteUser = await User.findByIdAndDelete(
                 {
-                    _id: req.params.id
+                    _id: req.params.userId
                 }
             )
             res.json(deleteUser)

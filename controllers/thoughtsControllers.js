@@ -5,8 +5,8 @@ const thoughtsControllers = {
     // find thoughts from the db to respond to the front end
     async getThoughts(req, res) {
         try {
-            const thoughts = await User.find()
-            res.json(User)
+            const thoughts = await Thought.find()
+            res.json(thoughts)
         } catch (error) {
             console.error(error)
         }
@@ -51,7 +51,7 @@ const thoughtsControllers = {
     // allow user to delete thought by thought ID
     async deleteThought(req, res) {
         try {
-            const deleteThought = await User.findByIdAndDelete(
+            const deleteThought = await Thought.findByIdAndDelete(
                 {
                     _id: req.params.thoughtId
                 }
